@@ -3,16 +3,16 @@ import 'normalize.css';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 import { Header } from "./components/Header/Header";
-import Main from "./pages/Main/Main";
-import Cars from './pages/Cars/Cars';
-import About from './pages/About/About';
-import Services from './pages/Services/Services';
-import Contacts from './pages/Contacts/Contacts';
+import MainPage from "./pages/MainPage/MainPage";
+import CarsPage from './pages/CarsPage/CarsPage';
+import AboutPage from './pages/AboutPage/AboutPage';
+import ServicesPage from './pages/ServicesPage/ServicesPage';
+import ContactsPage from './pages/ContactsPage/ContactsPage';
 import { Footer } from './components/Footer/Footer';
-import Car from './pages/Car/Car';
-import Shipping from './pages/Shipping/Shipping';
-import Warranty from './pages/Warranty/Warranty';
-import Financing from './pages/Financing/Financing';
+import CarPage from './pages/CarPage/CarPage';
+import ShippingPage from './pages/ShippingPage/ShippingPage';
+import WarrantyPage from './pages/WarrantyPage/WarrantyPage';
+import FinancingPage from './pages/FinancingPage/FinancingPage';
 
 import ScrollToTop from "./utils/scrollToTop";
 
@@ -23,15 +23,15 @@ function App() {
         <ScrollToTop />
         <Header/>
         <Routes>
-            <Route path="/" element={<Main />} />
-            <Route path="/cars" element={<Cars />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/contacts" element={<Contacts />} />
-            <Route path="/car/:id" element={<Car />} />
-            <Route path="/shipping" element={<Shipping />} />
-            <Route path="/warranty" element={<Warranty />} />
-            <Route path="/financing" element={<Financing />} />
+            <Route path="/" element={<MainPage />} />
+            <Route path="/cars" element={<CarsPage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/contacts" element={<ContactsPage />} />
+            <Route path="/car/:id" element={<CarPage />} />
+            <Route path="/shipping" element={<ShippingPage />} />
+            <Route path="/warranty" element={<WarrantyPage />} />
+            <Route path="/financing" element={<FinancingPage />} />
         </Routes>
         <Footer/>
       </Router>
