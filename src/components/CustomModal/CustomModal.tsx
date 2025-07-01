@@ -2,7 +2,7 @@ import React from "react";
 import Modal from "react-modal";
 import "./CustomModal.scss";
 import { CustomModalProps } from "../../types/others";
-
+// 
 export const CustomModal: React.FC<CustomModalProps> = ({ isOpen, onClose, submitButton, children }) => {
   return (
     <Modal
