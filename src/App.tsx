@@ -11,7 +11,7 @@ import ShippingPage from "./pages/ShippingPage/ShippingPage";
 import WarrantyPage from "./pages/WarrantyPage/WarrantyPage";
 import FinancingPage from "./pages/FinancingPage/FinancingPage";
 import ScrollToTop from "./utils/scrollToTop";
-
+// 
 function App() {
   return (
     <div className="App">
