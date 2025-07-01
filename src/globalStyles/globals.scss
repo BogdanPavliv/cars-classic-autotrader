@@ -1,0 +1,347 @@
+/* ==================================================================================== */
+
+html,
+body {
+  font-family: "Unbounded-Regular", sans-serif;
+  font-weight: 400;
+  background-color: #f3f4f6;
+  color: #555;
+  min-height: 100vh;
+  font-size: 16px;
+  line-height: 1;
+}
+
+@font-face {
+  font-family: "Unbounded-Light", sans-serif;
+  src: url("../fonts/Unbounded-Light.eot") format("eot"),
+    url("../fonts/Unbounded-Light.otf") format("otf"),
+    url("../fonts/Unbounded-Light.woff2") format("woff2"),
+    url("../fonts/Unbounded-Light.woff") format("woff"),
+    url("../fonts/Unbounded-Light.ttf") format("ttf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Unbounded-Regular", sans-serif;
+  src: url("../fonts/Unbounded-Regular.eot") format("eot"),
+    url("../fonts/Unbounded-Regular.otf") format("otf"),
+    url("../fonts/Unbounded-Regular.woff2") format("woff2"),
+    url("../fonts/Unbounded-Regular.woff") format("woff"),
+    url("../fonts/Unbounded-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Unbounded-Medium", sans-serif;
+  src: url("../fonts/Unbounded-Medium.eot") format("eot"),
+    url("../fonts/Unbounded-Medium.otf") format("otf"),
+    url("../fonts/Unbounded-Medium.woff2") format("woff2"),
+    url("../fonts/Unbounded-Medium.woff") format("woff"),
+    url("../fonts/Unbounded-Medium.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+.container-sm {
+  max-width: 1760px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container-md {
+  max-width: 1830px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container-lg {
+  max-width: 1950px;
+  /* padding: 0 15px; */
+  margin: 0 auto;
+}
+
+.logo {
+  font-family: "Unbounded-Medium", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29.76px;
+  color: #3a3c35;
+}
+
+a.privacy {
+  display: block;
+  margin-top: 54px;
+  font-family: "Unbounded-Light", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  color: #3a3b35;
+  text-decoration: underline;
+}
+
+@media (max-width: 540px) {
+  .logo {
+    font-size: 14px;
+    line-height: 17.36px;
+  }
+}
+
+.title-top {
+  font-family: "Unbounded-Medium", sans-serif;
+  font-weight: 500;
+  font-size: 124px;
+  line-height: 136.4px;
+  margin: 50px 0;
+}
+
+.title {
+  font-family: "Unbounded-Medium", sans-serif;
+  font-weight: 500;
+  font-size: 100px;
+  line-height: 100px;
+}
+
+/* badge-transparent start */
+
+.badge-transparent {
+  /* max-width: 100%; */
+  max-width: 284px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 12px;
+  padding: 13px 24px 14px 26px;
+  border: 1px solid #3a3c35;
+  border-radius: 100px;
+
+  font-family: "Unbounded-Medium", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17.36px;
+  color: #3a3c35;
+}
+
+.page-contacts .badge-transparent {
+  border: none;
+  background-color: #3a3c35;
+  color: #fff;
+}
+
+/* badge-transparent end */
+
+@media (max-width: 968px) {
+  .title-top {
+    font-size: 90px;
+    line-height: 102px;
+    margin: 25px 0;
+  }
+}
+
+@media (max-width: 540px) {
+  .title-top {
+    font-size: 32px;
+    line-height: 35.2px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+
+  .badge-img {
+    stroke: #fff;
+  }
+
+  .badge-transparent {
+    border: none;
+    background-color: #3a3c35;
+    color: #fff;
+  }
+}
+
+.title-left {
+  max-width: 678px;
+  width: 100%;
+  font-family: "Unbounded-Medium", sans-serif;
+  font-weight: 500;
+  font-size: 100px;
+  line-height: 100px;
+  color: #3a3c35;
+}
+
+@media (max-width: 968px) {
+  .title-left {
+    max-width: 100%;
+    font-size: 70px;
+    line-height: 70px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 540px) {
+  .title-left {
+    font-size: 32px;
+    line-height: 35.2px;
+  }
+}
+
+.hiden-badge {
+  display: none;
+}
+
+.title-margin {
+  margin-bottom: 0;
+}
+
+.page-services {
+  padding-bottom: 150px;
+}
+
+.page-services .badge-transparent {
+  border: none;
+  background-color: #3a3c35;
+  color: #fff;
+}
+
+@media (max-width: 968px) {
+  .title {
+    font-size: 70px;
+    line-height: 70px;
+  }
+
+  .hiden-element {
+    display: none;
+  }
+
+  a.hiden-element {
+    display: none;
+  }
+
+  .visible {
+    display: block;
+    margin-top: 32px;
+  }
+
+  a.visible {
+    display: block;
+    margin-top: 36px;
+  }
+
+  .visible .badge-transparent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+    padding: 13px 24px 14px 26px;
+    border: none;
+    background-color: #3a3c35;
+    color: #fff;
+  }
+
+  .page-services {
+    padding-bottom: 32px;
+  }
+}
+
+@media (max-width: 540px) {
+  .title {
+    font-size: 32px;
+    line-height: 35.2px;
+  }
+}
+
+@media (max-width: 968px) {
+  .faq-section .badge-img {
+    stroke: #fff;
+  }
+}
+
+@media (max-width: 968px) {
+  .map-section .badge-transparent {
+    max-width: 100%;
+    border: none;
+    background-color: #3a3c35;
+    color: #fff;
+  }
+
+  .page-contacts .badge-transparent {
+    max-width: 100%;
+  }
+}
+
+.page-car .badge-transparent.brown {
+  max-width: 300px;
+  border: none;
+  background-color: #3a3c35;
+  color: #fff;
+}
+
+.page-car .badge-container.hiden-element.marginTop {
+  margin-top: 203px;
+}
+
+.page-car .badge-container.hiden-element.marginTop.bottom {
+  display: none;
+}
+
+.page-car .badge-container {
+  margin-top: 24px;
+}
+
+.page-car .badge-transparent {
+  max-width: 157px;
+  padding: 12px 38px;
+  font-size: 16px;
+  line-height: 19.84px;
+}
+
+@media (max-width: 968px) {
+  .page-car .badge-container {
+    margin-top: 16px;
+  }
+
+  .page-car .badge-container.hiden-element.marginTop.bottom.visible {
+    margin-top: 36px;
+    display: block;
+  }
+
+  .page-car .badge-transparent {
+    border: 1px solid #3a3c35;
+    background: none;
+    color: #3A3C35;
+  }
+
+  .page-car .badge-transparent.brown {
+    max-width: 100%;
+  }
+
+}
+
+.badge-container.hiden-element.marginTop {
+  margin-top: 307px;
+}
+
+.badge-transparent.brown {
+  max-width: 300px;
+  border: none;
+  background-color: #3a3c35;
+  color: #fff;
+}
+
+.badge-container.hiden-element.marginTop.bottom {
+  display: none;
+}
+
+@media (max-width: 968px) {
+  .badge-container.hiden-element.marginTop.bottom.visible {
+    margin-top: 36px;
+    display: block;
+  }
+
+  .badge-transparent.brown {
+    max-width: 100%;
+  }
+}

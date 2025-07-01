@@ -1,0 +1,86 @@
+/* section financing start */
+
+.section_financing {
+  padding-bottom: 100px;
+}
+
+.section_financing__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.section_financing__left {
+  max-width: 856px;
+}
+
+.section_financing__right {
+  max-width: 892px;
+}
+
+.section_financing .badge-transparent {
+  border: none;
+  background-color: #3a3c35;
+  color: #fff;
+}
+
+.section_financing__content {
+  font-family: "Unbounded-Light", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28.8px;
+  color: #3A3C35;
+  margin-bottom: 112px;
+}
+
+.section_financing__img {
+  border-radius: 10px;
+}
+
+.section_financing__text {
+  margin-bottom: 20px;
+}
+
+.section_financing__text:last-child {
+  margin-bottom: 0px;
+}
+
+@media (max-width: 1880px) {
+  .section_financing__left {
+    flex: 1 0 auto;
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 968px) {
+  .section_financing {
+    padding-bottom: 32px;
+  }
+
+  .section_financing__inner {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .section_financing__left {
+    max-width: 100%;
+  }
+
+  .section_financing__img {
+    margin: 0 auto;
+  }
+
+  .section_financing__right {
+    max-width: 100%;
+  }
+
+  .section_financing__content {
+    margin-bottom: 32px;
+  }
+
+  .section_financing .badge-transparent {
+    max-width: 100%;
+  }
+}
+
+/* section financing end */

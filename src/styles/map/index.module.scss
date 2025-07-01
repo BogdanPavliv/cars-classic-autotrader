@@ -1,0 +1,79 @@
+/* section map start */
+
+.section_map {
+  padding-bottom: 100px;
+}
+
+.section_map__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.section_map__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 47px;
+}
+
+.page-contacts .section_map__top {
+  margin-top: 50px;
+}
+
+.section_map__top__actions {
+  max-width: 391px;
+  width: 100%;
+}
+
+.section_map__top__phone,
+.section_map__top__address {
+  display: block;
+}
+
+.section_map__top__phone {
+  font-family: "Unbounded-Medium", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  color: #3a3b35;
+  margin-bottom: 24px;
+}
+
+.section_map__top__address {
+  font-family: "Unbounded-Light", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+  color: #3a3b35;
+  margin-bottom: 69px;
+}
+
+.map_top_margin {
+    margin-top: 50px;
+}
+
+@media (max-width: 968px) {
+  .section_map {
+    padding-bottom: 32px;
+  }
+  .section_map__map_wrapper {
+    margin: 0 -15px 0 -15px;
+  }
+  .section_map__top {
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+  .section_map__top__actions {
+    max-width: 100%;
+  }
+  .section_map__wrapper {
+    flex-direction: column-reverse;
+  }
+  .section_map__bottom {
+    margin-bottom: 32px;
+  }
+  .section_map__top__address {
+    margin-bottom: 32px;
+  }
+}
+
+/* section map end */

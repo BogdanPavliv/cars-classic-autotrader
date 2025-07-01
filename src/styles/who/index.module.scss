@@ -1,0 +1,67 @@
+/* section who are we start */
+
+.section_who__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.section_who__left {
+  max-width: 604px;
+  width: 100%;
+}
+
+.section_who .badge-container.hiden-element.marginTop {
+  margin-top: 307px;
+}
+
+.section_who .badge-transparent.brown {
+  max-width: 300px;
+  border: none;
+  background-color: #3a3c35;
+  color: #fff;
+}
+
+.section_who__right{
+  max-width: 892px;
+  width: 100%;
+}
+
+.section_who__right_text_wrapper {
+  margin-top: 50px;
+  font-family: "Unbounded-Light", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 29px;
+  color: #3a3c35;
+}
+
+.car__details__info_text_title {
+  margin-bottom: 20px;
+}
+
+.section_who .badge-container.hiden-element.marginTop.bottom {
+  display: none;
+}
+
+@media (max-width: 968px) {
+  .section_who__inner {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .section_who__left {
+    max-width: 100%;
+  }
+  .section_who__right_text_wrapper {
+    margin-top: 0px;
+  }
+  .section_who .badge-container.hiden-element.marginTop.bottom.visible {
+      margin-top: 36px;
+      display: block;
+  }
+  .section_who .badge-transparent.brown {
+    max-width: 100%;
+  }
+}
+
+/* section who are we end */

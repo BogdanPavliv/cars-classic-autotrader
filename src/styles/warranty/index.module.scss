@@ -1,0 +1,86 @@
+/* section warranty start */
+
+.section_warranty {
+  padding-bottom: 100px;
+}
+
+.section_warranty__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.section_warranty__left {
+  max-width: 856px;
+}
+
+.section_warranty__right {
+  max-width: 892px;
+}
+
+.section_warranty .badge-transparent {
+  border: none;
+  background-color: #3a3c35;
+  color: #fff;
+}
+
+.section_warranty__content {
+  font-family: "Unbounded-Light", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28.8px;
+  color: #3A3C35;
+  margin-bottom: 112px;
+}
+
+.section_warranty__img {
+  border-radius: 10px;
+}
+
+.section_warranty__text {
+  margin-bottom: 20px;
+}
+
+.section_warranty__text:last-child {
+  margin-bottom: 0px;
+}
+
+@media (max-width: 1880px) {
+  .section_warranty__left {
+    flex: 1 0 auto;
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 968px) {
+  .section_warranty {
+    padding-bottom: 32px;
+  }
+
+  .section_warranty__inner {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .section_warranty__left {
+    max-width: 100%;
+  }
+
+  .section_warranty__img {
+    margin: 0 auto;
+  }
+
+  .section_warranty__right {
+    max-width: 100%;
+  }
+
+  .section_warranty__content {
+    margin-bottom: 32px;
+  }
+
+  .section_warranty .badge-transparent {
+    max-width: 100%;
+  }
+}
+
+/* section warranty end */
