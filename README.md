@@ -1,69 +1,58 @@
-# React + TypeScript + Vite
+# Cars Classic AutoTrader
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Cars Classic AutoTrader** — сучасний React-додаток для перегляду, фільтрації та взаємодії з класичними автомобілями. Проєкт побудований на основі [React 19](https://react.dev/), [TypeScript](https://www.typescriptlang.org/), [Vite](https://vitejs.dev/) і стилізований за допомогою [Styled Components](https://styled-components.com/) та [SASS](https://sass-lang.com/).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚘 Основні можливості
 
-## Expanding the ESLint configuration
+- Адаптивний UI для перегляду класичних автомобілів
+- Анімації з [GSAP](https://greensock.com/gsap/)
+- Інтерактивні модальні вікна з [React Modal](https://github.com/reactjs/react-modal)
+- Слайдери з [React Slick](https://react-slick.neostack.com/) та [Swiper](https://swiperjs.com/)
+- Валідований телефонний інпут з [react-phone-number-input](https://catamphetamine.gitlab.io/react-phone-number-input/)
+- Lazy-load контенту за допомогою `react-intersection-observer`
+- Плавна анімація лічильників з [React CountUp](https://www.npmjs.com/package/react-countup)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ⚙️ Технологічний стек
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **React 19** + **TypeScript**
+- **Vite** — сучасний білд-інструмент
+- **Styled Components** — CSS-in-JS підхід до стилізації
+- **SASS** — розширення можливостей CSS
+- **GSAP** — анімації професійного рівня
+- **React Router DOM v7** — клієнтська маршрутизація
+- **ESLint** — забезпечення якості коду
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 📦 Встановлення
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+bash
+git clone https://github.com/BogdanPavliv/cars-classic-autotrader.git
+cd cars-classic-autotrader
+npm install
+npm run dev
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Команди
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+| Скрипт       | Опис                                                                 |
+|--------------|----------------------------------------------------------------------|
+| `npm run dev`     | Запуск локального дев-серверу Vite                                   |
+| `npm run build`   | Компільовування TypeScript і білд продакшен-версії                 |
+| `npm run preview` | Перегляд продакшен-збірки локально                                 |
+| `npm run lint`    | Аналіз коду ESLint з суворими правилами та перевіркою unused директив |
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## ✅ Якість коду
+
+Проєкт налаштований з використанням:
+- **ESLint** з плагінами `@typescript-eslint`, `react-hooks`, `react-refresh`
+- **TypeScript strict mode**
+- Заборонено ігнорування ESLint правил без використання `--report-unused-disable-directives`
+
+## 🛠️ Розгортання
+
+[Watch demo](https://cars-classic-autotrader.netlify.app/)
+
+👨‍💻 Автор
+Богдан Павлів — Frontend Developer
+📧 [bogdan.pavliv@gmail.com]
+🌐 [My portfolio](https://bogdan-pavliv.netlify.app)
